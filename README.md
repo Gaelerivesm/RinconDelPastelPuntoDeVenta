@@ -1,2 +1,2 @@
 # RinconDelPastelPuntoDeVenta
-Proyecto final funamentos de la programación
+Proyecto final fundamentos de la programación
