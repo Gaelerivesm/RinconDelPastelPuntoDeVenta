@@ -30,7 +30,14 @@
     DISEÑO DE ENTRADAS Y SALIDAS
 
 
-
+Salidas:
+-Precio total del pedido (subtotal+IVA)
+-Confirmación de pedido realizado exitosamente 
+-Actualizacion del inventario (ingredientes y pasteles)
+-Reporte de ventas diarias o semanales
+-Mensajes de advertencia-”Ingrediente insuficiente “
+-Alertas bajo inventario 
+-Menu con opciones de navegación interfaz de punto de venta 
 
 
 
