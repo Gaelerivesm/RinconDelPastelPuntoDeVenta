@@ -10,8 +10,8 @@ Buscamos que el programa sea capaz de tener una interfaz intuitiva para los usua
 SENIOR
 1. Gael Erives
 Mid
-1. Fernanda
+1. Fernanda Ramirez
 2. Victor Cruz
 Junior
-1. Nissa
-2. Andrea   
+1. Nissa Ochoa
+2. Andrea Silva
