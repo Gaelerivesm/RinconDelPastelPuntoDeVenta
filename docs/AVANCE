@@ -28,6 +28,13 @@
 
     ==========================
     DISEÑO DE ENTRADAS Y SALIDAS
+Entradas:
+-Datos de ingredientes :nombre,cantidad,costo por unidad 
+-Datos de pasteles:nombre,ingredientes que se utilizan ,margen de ganancia 
+-Datos de pedido :nombre del cliente (opciónal),tipo de pastel, cantidad,metodo de pago.
+-Precios y existencias iniciales del inventario 
+-Comandos o selecciones del usuario en la interfaz(registrar venta o consultar inventario)
+
 
 
 Salidas:
