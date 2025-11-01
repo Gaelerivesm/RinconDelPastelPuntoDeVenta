@@ -14,10 +14,17 @@
     ==========================
     REGLAS DE NEGOCIO
 
+ 1-No se puede realizar una venta si no hay pasteles disponibles en el inventario.
 
+ 2-El sistema debe  actualizar automáticamente el inventario al realizar una venta o crear un nuevo paste
 
+ 3-Los pedidos deberan incluir fecha y hora de registro para mantener un control de ventas 
 
+ 4-Si el inventario de un ingrediente llega cerca a cero el sistema debe de emitir una alerta o mensaje
 
+ 5-El sistema debe calcular el precio total del pedido incluyendo impuestos (IVA)
+
+ 6-Solo el administrador podra agregar ,modificar o eliminar productos del inventario.
 
     ==========================
     REQUISITOS FUNCIONALES
