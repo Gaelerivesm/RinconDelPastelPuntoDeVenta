@@ -6,12 +6,12 @@ Desarrollar un sistema de punto de venta y gestión dirigido especialmente a la 
 
 Buscamos que el programa sea capaz de tener una interfaz intuitiva para los usuarios, mientras facilita seguir el stock de ingredientes, generar reportes de ventas y asegurar que la información sea actualizada y uniforme dentro del sistema.
 
-# ROLES DE EQUIPO
+ROLES DE EQUIPO
 #SENIOR
-#1. Gael Erives
+1. Gael Erives
 #Mid
-#2. Fernanda Ramirez
-#3. Victor Cruz
+2. Fernanda Ramirez
+3. Victor Cruz
 #Junior
-#4. Nissa Ochoa
-#5. Andrea Silva 
+4. Nissa Ochoa
+5. Andrea Silva 
