@@ -13,7 +13,7 @@
 
     ==========================
     REGLAS DE NEGOCIO
-
+    
  1-No se puede realizar una venta si no hay pasteles disponibles en el inventario.
 
  2-El sistema debe  actualizar automáticamente el inventario al realizar una venta o crear un nuevo paste
