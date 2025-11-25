@@ -1,14 +1,23 @@
     ==========================
     PORTADA
-
-
-
+Titulo: Rincon del Pastel
+Equipo
+-Senior: Gael Erives
+-Mid: Fernanda Ramirez y Victor Cruz
+-Junior: Nissa Ochoa y Andre Silva
 
 
     ==========================
     CONTEXTO Y PROBLEMA
+Descripción breve del escenario y problemas a resolver
+La pastelería “Rincón del Pastel” es un emprendimiento pequeño que tiene varios problemas con la organización: no cuentan con una manera facil de gestionar su inventario (tanto de ingredientes como de pasteles disponibles), también suelen batallar con los pedidos, toman nota en cuadernos y frecuentemente pierden el rastro lo que ocasiona que pierdan varias ventas, o den un precio incorrecto generando pérdidas al negocio.
 
-
+Criterios de éxito
+Lograr hacer un programa de punto de venta que sea capaz de realizar las siguientes tareas:
+1-Gestionar inventario (ingredientes y pasteles disponibles). 
+2-Calcular los precios finales que tendrán los pasteles en base a los ingredientes que este use.
+3-Registrar Pedidos.
+4-Una interfaz de usuario intuitiva 
 
 
     ==========================
@@ -82,3 +91,52 @@ Salidas:
 
 
     ==========================
+    TABLA DE TRABAJO
+
+1-CONTEXTO Y PROBLEMA  
+Descripción: Plantear el escenario en que se va a ambientar el negocio, los problemas que busca resolver y los criterios de éxito.  
+Encargados: TODOS  
+Fecha objetivo: 30/10/2025  
+
+---------------------------
+
+2- REGLAS DEL NEGOCIO  
+Descripción: Definir de 6 a 10 reglas que controlarán cómo va a funcionar el sistema.  
+Ejemplo: “No se puede realizar una venta si no hay pasteles disponibles en el inventario.”  
+Encargados: FER / VICTOR (MID)  
+Fecha objetivo: 30/10/2025  
+
+---------------------------
+
+3- REQUISITOS FUNCIONALES  
+Descripción: Establecer de 8 a 12 funciones que el programa deberá cumplir (inventario, precios, ventas, etc.)  
+Encargados: FER / VICTOR (MID)  
+Fecha objetivo: 30/10/2025  
+
+---------------------------
+
+4- DISEÑO DE ENTRADAS Y SALIDAS  
+Descripción: Especificar los datos de entrada (precios, pedidos, inventario) y los de salida (reporte, precio total, advertencias, etc.)  
+Encargados: NISSA / ANDREA (JUNIOR)  
+Fecha objetivo: 31/10/2025  
+
+---------------------------
+
+5- DIAGRAMA DE FLUJO  
+Descripción: Crear el diagrama de flujo que muestre claramente el proceso que lleva a cabo el programa.  
+Encargados: FER / VICTOR / GAEL (MID o SENIOR)  
+Fecha objetivo: 31/10/2025  
+
+---------------------------
+
+6- REVISIÓN GENERAL Y MEJORAS  
+Descripción: Revisar que todo esté en orden, coherente y sin errores mínimos.  
+Encargado: GAEL (SENIOR)  
+Fecha objetivo: 31/10/2025  
+
+---------------------------
+
+7- ORGANIZACIÓN EN GITHUB  
+Descripción: Crear el repositorio y mantener la estructura solicitada en orden.  
+Encargado: GAEL (SENIOR)  
+Fecha objetivo: 31/10/2025
