@@ -98,3 +98,13 @@ def registrar_pedido(cliente, tipo_pastel, cantidad, metodo_pago):
     })
     print("Pedido registrado. Total:", total)
 
+# ======= CONSULTAS =======
+def mostrar_inventario():
+    print("Inventario:")
+    for ing, datos in ingredientes.items():
+        print(f"{ing}: {datos['cantidad']} unidades, costo {datos['costo']}")
+
+def mostrar_pedidos():
+    print("Pedidos registrados:")
+    for p in pedidos:
+        print(f"{p['fecha']} - Cliente: {p['cliente']} - {p['cantidad']}x {p['pastel']} - Total: {p['total']}")
