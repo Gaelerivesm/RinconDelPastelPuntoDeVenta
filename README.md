@@ -24,4 +24,4 @@ ROLES DE EQUIPO
 
 
 5. Nissa Ochoa
-6. Andrea Silva.
+6. Andrea Silva
