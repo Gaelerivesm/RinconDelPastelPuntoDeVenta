@@ -63,3 +63,38 @@ def eliminar_pastel(nombre):
         return
     del pasteles[nombre]
     print("Pastel eliminado.")
+
+# ======= CALCULAR PRECIO =======
+def calcular_precio_pastel(nombre_pastel):
+    pastel = pasteles[nombre_pastel]
+    costo_total = 0
+    for ing, cant in pastel["ingredientes"].items():
+        costo_total += ingredientes[ing]["costo"] * cant
+    precio_final = costo_total * (1 + pastel["ganancia"])
+    precio_final *= 1.16  # IVA
+    return precio_final
+
+# ======= REGISTRO DE PEDIDOS =======
+from datetime import datetime
+
+def registrar_pedido(cliente, tipo_pastel, cantidad, metodo_pago):
+    if tipo_pastel not in pasteles:
+        print("Ese pastel no existe.")
+        return
+    for ing, cant in pasteles[tipo_pastel]["ingredientes"].items():
+        if ingredientes[ing]["cantidad"] < cant * cantidad:
+            print("Ingrediente insuficiente:", ing)
+            return
+    for ing, cant in pasteles[tipo_pastel]["ingredientes"].items():
+        ingredientes[ing]["cantidad"] -= cant * cantidad
+    total = calcular_precio_pastel(tipo_pastel) * cantidad
+    pedidos.append({
+        "cliente": cliente,
+        "pastel": tipo_pastel,
+        "cantidad": cantidad,
+        "total": total,
+        "pago": metodo_pago,
+        "fecha": datetime.now()
+    })
+    print("Pedido registrado. Total:", total)
+
