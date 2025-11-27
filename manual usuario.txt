@@ -1,0 +1,79 @@
+Manual de usuario-Sistema de pasteleria "El rincon del pastel"
+Este programa permitie administrar la pasteleria mediante un menú interactivo .El usuario puede llevar el control de los ingredientes ,pasteles y pedidos ,asi como consultar inventario y precios.
+A continuacion se explica como funciona cada opcion :
+
+=INICIO DEL PROGRAMA=
+Al ejecutar el programa ,se cargan los archivos CSV automaticamente:
+-ingredientes.CSV
+-pasteles.CSV
+-pedidos.CSV
+Despues,aparece el menu principal interactivo con las opciones numeradas.
+
+=MENÚ PRINCIPAL Y FUNCIONES=
+1-Mostrar inventario:
+Muestra todos los ingredientes disponibles ,cantidades y su costo unitario .
+
+2-Agregar ingrediente :
+El usuario tendra que escribir ;
+-Nombre del ingrediente 
+-Cantidad inicial (SOLO NUMEROS)
+-Costo unitario (SOLO NUMEROS)
+Al finalizar el ingrediente se guarda automaticamente en el archivo CSV.
+
+3-Mofificar ingrediente:
+Permite cambiar la cantidad y el costo de un ingrediente YA EXISTENTE,si no existe el ingrediente el programa avisa.
+
+4-Eliminar ingrediente :
+Borrar un ingrediente del inventario .
+
+5-Mostrar pasteles:
+Se muestra la lista de todos los pasteles registrados,los ingrediente que se usan y su ganancia .
+
+6-Agregar pastel:
+El usuario escribe ;
+1-Nombre del pastel
+2-ingredientes en formato(Ej.harina 2)
+3-Ganancia (porcentaje en numero)
+Finalmente el pastel queda registrado en el archivo CSV.
+
+7-Modificar pastel:
+Permite cambbiar ingredientes o la ganancia de un pastel EXISTENTE.
+Se pueden actualizar todos los ingredientes mediante el mismo formato de entrada.
+
+8-Eliminar pastel:
+Eliminar un pastel del registro.
+
+9-Registar pedido:
+El programa solicita los siguientes datos:
+-Nombre del cliente 
+-Tipo de pastel
+-Cantidad
+-Metodo de pago 
+Despues:
+-Verifica si hay ingredientes suficientesa
+-Descuenta automaticamente del inventario 
+-Calcula el total con ganancias e IVA
+-Guarda el pedido en el archivo de CSV
+
+10-Mostrar pedidos:
+Muestra todos los pedidos registrados,con;
+-Fecha
+-cliente
+-Pastel
+-Cantidad 
+-Total pagado 
+
+11-Calcular precio(1 unidad)
+El usuario escribe el nombre del pastel y el programa calcula ;
+-Costo total de ingredientes
+-Aplica ganancia 
+-Aplica IVA
+-Muestra el precio final por unidad 
+
+0-Guardar y salir 
+Guarda todos los datos en el archivo CSV y cierra el programa .
+
+=NOTAS IMPORTANTES PARA EL USUARIO=
+-Todos las cantidades deben ingresarse con numeros enteros
+-Los CSV se actualizan automaticamente cada vez que se agrega,modifica o elimina algo.
+-Si se intenta usar un patel o ingrediente inexistente el programa avisa.
