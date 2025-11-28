@@ -100,13 +100,8 @@ def agregar_ingrediente():
     if nombre in ingredientes:
         print("El ingrediente ya existe.")
         return
-    try:
-        cantidad = int(input("Cantidad inicial (enteros): "))
-        costo = float(input("Costo por unidad (número): "))
-    except ValueError:
-        print("Solo puedes usar numeros")
-        return
-    
+    cantidad = int(input("Cantidad inicial (enteros): "))
+    costo = float(input("Costo por unidad (número): "))
     ingredientes[nombre] = {"cantidad": cantidad, "costo": costo}
     guardar_ingredientes()
 
@@ -115,12 +110,8 @@ def modificar_ingrediente():
     if nombre not in ingredientes:
         print("El ingrediente no existe.")
         return
-    try:
-        entrada = int(input("Nueva cantidad (deja en blanco para no cambiar): "))
-        entrada = int(input("Nuevo costo (deja en blanco para no cambiar): "))
-    except ValueError:
-        print("Solo se pueden usar numeros")
-        return
+    entrada = int(input("Nueva cantidad (deja en blanco para no cambiar): "))
+    entrada = int(input("Nuevo costo (deja en blanco para no cambiar): "))
     ingredientes[nombre]["costo"] = float(entrada)
     guardar_ingredientes()
     print("Ingrediente modificado.")
@@ -177,11 +168,7 @@ def agregar_pastel():
         return
 
     ingredientes_usados = pedir_ingredientes_para_pastel()
-    try:
-        ganancia = int(input("Introduce la ganancia"))
-    except ValueError:
-        print("Solo puedes usar numeros")
-        return
+    ganancia = int(input("Introduce la ganancia"))
     pasteles[nombre] = {"ingredientes": ingredientes_usados, "ganancia": ganancia}
 
     guardar_pasteles()
@@ -254,11 +241,7 @@ def calcular_precio_pastelel(nombre_pastel):
 def registrar_pedido():
     cliente = input("Cliente: ")
     tipo_pastel = input("Pastel: ")
-    try: 
-        cantidad = int(input("Cantidad: "))
-    except ValueError:
-        print("Solo puedes usar numeros")
-        return
+    cantidad = int(input("Cantidad: "))
     metodo_pago = input("Método de pago: ")
     if tipo_pastel not in pasteles:
         print("Ese pastel no existe.")
@@ -317,4 +300,37 @@ while True:
     print("10) Mostrar pedidos")
     print("11) Calcular precio (1 unidad)")
     print("0) Guardar y salir")
-    opcion = input("Elige una opción: ")
+    if opcion == "1":
+        mostrar_inventario()
+    elif opcion == "2":
+        agregar_ingrediente()
+    elif opcion == "3":
+        modificar_ingrediente()
+    elif opcion == "4":
+        eliminar_ingrediente()
+    elif opcion == "5":
+        mostrar_pasteles()
+    elif opcion == "6":
+        agregar_pastel()
+    elif opcion == "7":
+        modificar_pastel()
+    elif opcion == "8":
+        eliminar_pastel()
+    elif opcion == "9":
+        registrar_pedido()
+    elif opcion == "10":
+        mostrar_pedidos()
+    elif opcion == "11":
+        nombre = input("Nombre del pastel: ")
+        if nombre in pasteles:
+            print("Precio:", calcular_precio_pastelel(nombre))
+        else:
+            print("Ese pastel no existe.")
+    elif opcion == "0":
+        guardar_ingredientes()
+        guardar_pasteles()
+        guardar_pedidos()
+        print("Datos guardados. ¡¡Hasta luego!!")
+        break
+    else:
+        print("Opción no válida.")
