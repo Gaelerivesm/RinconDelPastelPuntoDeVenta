@@ -25,3 +25,33 @@ ROLES DE EQUIPO
 
 5. Nissa Ochoa
 6. Andrea Silva
+
+
+#PASOS PARA INSTALAR Y EJECUTAR EL PROGRAMA 
+
+1. Instalar Python. 
+Descargar e instalar Python.
+Durante la instalación activar la opción "Add Python to PATH". 
+
+2. Crear una carpeta. Crear una carpeta para el proyecto y guardar dentro el archivo con el código, por ejemplo: pasteleria.py.
+
+3. Crear los archivos CSV. En la misma carpeta crear tres archivos vacíos:
+ingredientes.csv
+pasteles.csv
+pedidos.csv
+
+4. Abrir la consola. 
+Abrir la aplicación con el "Símbolo de windows" y luego escribir “cmd”.
+Algunas computadoras tienen un botón de “cmd”, solo seria presionarlo.
+
+5. Ir a la carpeta del proyecto. Usar el comando cd seguido de la ruta de la carpeta.
+
+6. Ejecutar el programa.
+Escribir: 
+python pasteleria.py 
+o 
+py pasteleria.py 
+
+7. Usar el menú. El usuario debe escribir el número de la opción que quiera.
+
+8. Para salir guardando. Elegir la opción 0 para guardar y cerrar
