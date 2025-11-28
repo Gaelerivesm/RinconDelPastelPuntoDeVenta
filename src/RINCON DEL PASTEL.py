@@ -300,6 +300,7 @@ while True:
     print("10) Mostrar pedidos")
     print("11) Calcular precio (1 unidad)")
     print("0) Guardar y salir")
+    opcion = input("Introduce una opcion")
     if opcion == "1":
         mostrar_inventario()
     elif opcion == "2":
